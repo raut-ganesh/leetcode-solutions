@@ -39,22 +39,40 @@ Constraints:
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.4 MB  
-**Submitted:** 2026-08-08T17:19:48.759Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 77.2 MB (beats 46.77%)  
+**Submitted:** 2026-08-08T17:19:55.179Z  
 
 ```cpp
+class Solution {
+public:
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+        ListNode* dummy = new ListNode(0);
+        ListNode* current = dummy;
+        int carry = 0;
 
-        while (l1 != nullptr || l2 != nullptr || carry != 0) {
-            int sum = carry;
+        while (l1 != nullptr || l2 != nullptr || carry != 0) {
+            int sum = carry;
 
-            if (l1 != nullptr) {
-                sum += l1->val;
-                l1 = l1->next;
-            }
+            if (l1 != nullptr) {
+                sum += l1->val;
+                l1 = l1->next;
+            }
 
-            if (l2 != nullptr) {
+            if (l2 != nullptr) {
+                sum += l2->val;
+                l2 = l2->next;
+            }
 
+            carry = sum / 10;
+
+            current->next = new ListNode(sum % 10);
+            current = current->next;
+        }
+
+        return dummy->next;
+    }
+};
 ```
 
 ---
