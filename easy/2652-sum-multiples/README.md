@@ -39,25 +39,24 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 41.9 MB  
-**Submitted:** 2026-08-22T14:16:06.736Z  
+**Runtime:** 3 ms (beats 93.75%)  
+**Memory:** 42.7 MB (beats 42.74%)  
+**Submitted:** 2026-08-22T14:16:27.026Z  
 
 ```java
-class Solution {
-    public int sumOfMultiples(int n) {
-         int sum = 0;
+class Solution {
+    public int sumOfMultiples(int n) {
+         int sum = 0;
 
-        for (int i = 1; i <= n; i++) {
-            if (i % 3 == 0 || i % 5 == 0 || i % 7 == 0) {
-                sum = sum + i;
-            }
-        }
+        for (int i = 1; i <= n; i++) {
+            if (i % 3 == 0 || i % 5 == 0 || i % 7 == 0) {
+                sum = sum + i;
+            }
+        }
 
-        return sum;
-    }
-    }
-
+        return sum;
+    }
+    }
 
 ```
 
