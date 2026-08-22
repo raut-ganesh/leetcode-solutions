@@ -39,21 +39,25 @@ Constraints:
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 7.8 MB  
-**Submitted:** 2026-08-22T14:10:26.738Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 8.6 MB (beats 10.99%)  
+**Submitted:** 2026-08-22T14:10:51.633Z  
 
 ```cpp
-                sum = sum + i;
-            }
-        for (int i = 1; i <= n; i++) {
-            if (i % 3 == 0 || i % 5 == 0 || i % 7 == 0) {
-        }
+class Solution {
+public:
+    int sumOfMultiples(int n) {
+        int sum = 0;
 
-        return sum;
-    }
+        for (int i = 1; i <= n; i++) {
+            if (i % 3 == 0 || i % 5 == 0 || i % 7 == 0) {
+                sum = sum + i;
+            }
+        }
+
+        return sum;
+    }
 };
-
 ```
 
 ---
