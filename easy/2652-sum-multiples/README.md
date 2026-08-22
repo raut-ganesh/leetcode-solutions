@@ -40,8 +40,8 @@ Constraints:
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 7.7 MB  
-**Submitted:** 2026-08-22T14:09:42.941Z  
+**Memory:** 7.8 MB  
+**Submitted:** 2026-08-22T14:10:26.738Z  
 
 ```cpp
                 sum = sum + i;
