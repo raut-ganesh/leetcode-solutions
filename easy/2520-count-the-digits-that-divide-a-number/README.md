@@ -39,16 +39,15 @@ Constraints:
 
 ## Solution
 
-**Language:** C++  
+**Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 7.7 MB (beats 73.63%)  
-**Submitted:** 2026-08-22T15:01:03.513Z  
+**Memory:** 42.2 MB (beats 18.29%)  
+**Submitted:** 2026-08-22T15:02:10.573Z  
 
-```cpp
+```java
 class Solution {
-public:
-    int countDigits(int num) {
-    int count=0;
+    public int countDigits(int num) {
+        int count=0;
     int n=num;
 
     while(n>0){
@@ -60,7 +59,8 @@ public:
     return count;
 
     }
-};
+    }
+
 ```
 
 ---
