@@ -40,28 +40,27 @@ Constraints:
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 7.7 MB  
-**Submitted:** 2026-08-22T15:00:46.508Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 7.7 MB (beats 73.63%)  
+**Submitted:** 2026-08-22T15:01:03.513Z  
 
 ```cpp
-class Solution {
+class Solution {
 public:
-    int countDigits(int num) {
-    int count=0;
-    int n=num;
+    int countDigits(int num) {
+    int count=0;
+    int n=num;
 
-    return count;
+    while(n>0){
+        int dig = n%10;
+        n = n/10;
+        if (num%dig ==0)
+         count++;
+    }   
+    return count;
 
-    while(n>0){
-        int dig = n%10;
-    }   
-    }
-        n = n/10;
-        if (num%dig ==0)
-         count++;
+    }
 };
-
 ```
 
 ---
