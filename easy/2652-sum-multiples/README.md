@@ -38,26 +38,27 @@ Constraints:
 
 ## Solution
 
-**Language:** C++  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 8.6 MB (beats 10.99%)  
-**Submitted:** 2026-08-22T14:10:51.633Z  
+**Language:** Java  
+**Runtime:** 0 ms  
+**Memory:** 41.9 MB  
+**Submitted:** 2026-08-22T14:16:06.736Z  
 
-```cpp
-class Solution {
-public:
-    int sumOfMultiples(int n) {
-        int sum = 0;
+```java
+class Solution {
+    public int sumOfMultiples(int n) {
+         int sum = 0;
 
-        for (int i = 1; i <= n; i++) {
-            if (i % 3 == 0 || i % 5 == 0 || i % 7 == 0) {
-                sum = sum + i;
-            }
-        }
+        for (int i = 1; i <= n; i++) {
+            if (i % 3 == 0 || i % 5 == 0 || i % 7 == 0) {
+                sum = sum + i;
+            }
+        }
 
-        return sum;
-    }
-};
+        return sum;
+    }
+    }
+
+
 ```
 
 ---
