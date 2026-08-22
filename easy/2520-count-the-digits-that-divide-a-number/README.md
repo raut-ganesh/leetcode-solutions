@@ -40,14 +40,15 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 42.2 MB (beats 18.29%)  
-**Submitted:** 2026-08-22T15:02:10.573Z  
+**Runtime:** 0 ms  
+**Memory:** 42.3 MB  
+**Submitted:** 2026-08-22T15:01:50.668Z  
 
 ```java
 class Solution {
-    public int countDigits(int num) {
-        int count=0;
+public:
+    int countDigits(int num) {
+    int count=0;
     int n=num;
 
     while(n>0){
@@ -59,8 +60,7 @@ class Solution {
     return count;
 
     }
-    }
-
+};
 ```
 
 ---
