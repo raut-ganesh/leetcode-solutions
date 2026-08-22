@@ -1,6 +1,7 @@
 class Solution {
-    public int countDigits(int num) {
-        int count=0;
+public:
+    int countDigits(int num) {
+    int count=0;
     int n=num;
 
     while(n>0){
@@ -12,4 +13,4 @@ class Solution {
     return count;
 
     }
-    }
+};
